@@ -114,31 +114,6 @@ const listSongGym = [
 	titleSong: 'NEFFEX - Unstoppable',
 	src: 'mp3/NEFFEX - Unstoppable.mp3'
 },
-// {
-// 	id: 24,
-// 	titleSong: 'Legends Never Die',
-// 	src: 'mp3/Legends Never Die.mp3'
-// },
-// {
-// 	id: 25,
-// 	titleSong: 'Imagine Dragons - Natural',
-// 	src: 'mp3/Imagine Dragons - Natural.mp3'
-// },
-// {
-// 	id: 26,
-// 	titleSong: 'LSD  Genius',
-// 	src: 'mp3/LSD  Genius .mp3'
-// },
-// {
-// 	id: 27,
-// 	titleSong: 'Imagine Dragons x JID Enemy',
-// 	src: 'mp3/Imagine Dragons x JID  Enemy.mp3'
-// },
-// {
-// 	id: 28,
-// 	titleSong: 'Sia - Unstoppable',
-// 	src: 'mp3/Sia - Unstoppable.mp3'
-// },
 {
 	id: 24,
 	titleSong: 'Dark x NoizBasses Remix',

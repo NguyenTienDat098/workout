@@ -5,6 +5,7 @@ const clock = document.querySelector('.clock');
 const buttonShowListSong = document.querySelector('.showmusic');
 const clockTimer = document.querySelector('.clockTimer');
 let isDisplay = false
+
 buttonShowListSong.onclick = () => {
 	listSong.style.display = 'block'
 	isDisplay = true
