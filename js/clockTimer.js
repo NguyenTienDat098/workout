@@ -1,15 +1,13 @@
 const buttonCountTime = document.querySelector('.start-pause');
 const buttonResetTime = document.querySelector('.reset');
-
 const hoursT = document.querySelector('.hourss');
 const minutesT = document.querySelector('.minutess');
 const secondsT = document.querySelector('.secondss');
-
 let timerSeconds = 0
 let timerMinutes = 0
 let timerHours = 0
-
 let isCounting = false
+
 buttonCountTime.onclick = () => {
 	if (isCounting === false) {
 		isCounting = true
