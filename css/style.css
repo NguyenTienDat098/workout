@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Mochiy+Pop+P+One&family=Neonderthaw&family=Poppins&family=Rubik+Beastly&display=swap');
+/* 
+fonts: 
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-family: 'Poppins', sans-serif;
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size: 30px;
+}
+html {
+	scroll-behavior: smooth;
+}
+.container{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #000;
+	position: relative;
+}
+
+.header{
+	position: relative;
+	user-select: none;
+	width: 100%;
+	height: 100vh;
+	background: url(../imgs/2040408.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-family: 'Mochiy Pop P One', sans-serif;
+
+}
+.menu-social{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 300px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.list-social{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+}
+.item-social{
+	width: 50px;
+	height: 50px;
+	margin: 0 10px;
+	cursor: pointer;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s linear;
+}
+.title-header,
+.des-header{
+	margin-left: 20px;
+}
+@keyframes Slide{
+	from{
+		transform: translateX(0);
+	}
+	to{
+		transform: translateX(-100%);
+	}
+}
+.song-gym{
+	font-family: 'Mochiy Pop P One', sans-serif;
+	width: 100%;
+	min-height: 80vh;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+.title-song-gym{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	user-select: none;
+}
+.note{
+	margin-bottom: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+.view-song{
+	overflow-x: hidden;
+	width: 100%;
+	min-height: 70vh ;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 10px 0;
+
+}
+.list-song{
+	width: 100%;
+	min-height: 100vh;
+	display: none;
+	position: fixed;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);	
+	border-radius: 10px;
+	width: 35%;
+	height: 500px;
+	overflow-y: scroll;
+	user-select: none;
+	display: none;
+	animation: Playlist 1s linear;
+
+}
+.list-song::-webkit-scrollbar { 
+	display: none; 
+}
+.item-song{
+	font-family: 'Poppins', sans-serif;
+	padding: 10px 15px;
+	width: 100%;
+	min-height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 20px;
+
+
+}
+.title-item-song{
+	width: 90%;
+}
+.title-author{
+	line-height: 10px;
+	font-size: 15px;
+	color: #F97F51;
+	font-weight: bold;
+	text-transform: unset;
+
+}
+.item-song ion-icon{
+	width: 10%;
+	font-size: 25px;
+	cursor: pointer;
+}
+.item-song ion-icon:hover{
+	color: #F97F51;
+}
+.play-song{
+	user-select: none;
+	height: 500px;
+	border-radius: 10px;
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	display: none;
+}
+.left-play-song{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.CD-song{
+	width: 260px;
+	height: 260px;
+	background: linear-gradient(130deg,#f0932b,#ffbe76,#f9ca24,#f6e58d);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: 200% 200%;
+	animation: CDcircle 2s linear infinite;
+}
+.CD{
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	background: url('../imgs/TheRock2.jpg');	
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+@keyframes CDcircle {
+	25%{
+		background-position: left bottom;
+	}
+	50%{
+		background-position: right bottom;
+	}
+	75%{
+		background-position: right top;
+	}
+	100%{
+		background-position: left top;
+	}
+}
+
+.title-song-play{
+	margin: 10px 0;
+}
+
+.progress-of-song{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.progress{
+
+}
+.progress-of-song span{
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+
+}
+input[type="range"] {
+	-webkit-appearance: none;
+	margin-right: 15px;
+	width: 200px;
+	height: 2px;
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 5px;
+	background-image: linear-gradient(#F97F51,#F97F51);
+	background-size: 70% 100%;
+	background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background: #F97F51;
+	cursor: pointer;
+	box-shadow: 0 0 2px 0 #555;
+	transition: background .3s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-runnable-track  {
+	-webkit-appearance: none;
+	box-shadow: none;
+	border: none;
+	background: transparent;
+}
+
+.play{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.play ion-icon{
+	margin: 0 8px;
+	cursor: pointer;
+}
+.volume ion-icon:hover,
+.play ion-icon:hover{
+	color: #F97F51;
+	transition: 0.5s linear;
+}
+.volume ion-icon{
+	cursor: pointer;
+
+}
+
+.isPlaying{
+	transform: rotate(25deg);
+	width: 25px;
+	height: 25px;
+	margin: 0 5px;
+	animation: IsPlaying 3s linear infinite;
+	color: #F97F51;
+	display: none;
+	transition: 0.5s linear;
+}
+@keyframes IsPlaying{
+	25%{
+		transform: rotate(-25deg);
+	}	
+	50%{
+		transform: rotate(-20deg);
+	}
+	75%{
+		transform: rotate(20deg);
+	}
+	100%{
+		transform: rotate(25deg);
+
+	}
+}
+@keyframes Playlist {
+	from{
+		opacity: 0;
+		transform: translateX(-200%);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.item-social a ion-icon{
+	transition: 0.5s linear;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	padding: 5px;
+}
+.facebook:hover a ion-icon{
+	border-radius: 50%;
+	background-color: #0984e3;
+	color: #fff;
+}
+.youtube:hover a ion-icon{
+	border-radius: 50%;
+	background-color: #d63031;
+	color: #fff;
+}
+.twitter:hover a ion-icon{
+	border-radius: 50%;
+	background-color: #74b9ff;
+	color: #fff;
+}
+.github:hover a ion-icon{
+	border-radius: 50%;
+	background-color: #fff;
+	color: #000;
+}
+.Motivation{
+	padding-bottom: 50px;
+	background-color: #000;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+	font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.title-motivation{
+	margin: 20px 0;
+	user-select: none;
+}
+.video-motivation {
+	width: 80%;
+	min-height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	margin: 10px 0;
+}
+.video-motivation iframe{
+	border-radius: 20px;
+	width: 100%;
+	height: 80vh;
+}
+.footer{
+	z-index: 10;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #000;
+	user-select: none;
+	padding-bottom: 10px;
+
+}
+.footer .back-icon{
+	display: none;
+	position: absolute;
+	left: 20px;
+}
+.footer ion-icon{
+	color: #fff;
+	width: 25px;
+	height: 25px;
+	margin: 0 15px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.footer ion-icon:hover{
+	color: #F97F51;
+}
+.activeMenu{
+	color: #000 !important;
+	padding: 5px;
+	background-color: #f0932b;
+}
+.button-back-video:hover,
+.button-next-video:hover,
+.footer a ion-icon:hover{
+	color: #F97F51;
+}
+
+.button-next-video{
+	top: 50%;
+	right: 10px;
+	transform: translateX(-50%,-50%);
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+.button-back-video{
+	top: 50%;
+	left: 10px;
+	transform: translateX(-50%,-50%);
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+}

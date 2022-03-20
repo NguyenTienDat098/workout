@@ -1,0 +1,130 @@
+@media only screen and (max-width: 600px){
+	.header{
+		position: relative;
+		user-select: none;
+		width: 100%;
+		height: 50vh;
+		background: url(../imgs/mobileGym.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		color: #fff;
+		font-family: 'Mochiy Pop P One', sans-serif;
+
+	}
+	.title-header,
+	.des-header{
+		display: none;
+	}
+	.menu-social{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 300px;
+		height: 60px;
+		transform: translate(-50%,-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.title-song-gym{
+		margin-top: 20px;
+		margin-bottom: 10px;
+		user-select: none;
+		font-size: 25px;
+	}
+	.note{
+		margin-bottom: 20px;
+		font-family: 'Poppins', sans-serif;
+		font-weight: bold;
+		font-size: 13px;
+	}
+	.view-song{
+		width: 100%;
+		min-height: 70vh ;
+		background-color: #000;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		padding: 10px 0;
+
+	}
+	.list-song{
+		background-color: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(10px);	
+		border-radius: 10px;
+		width: 100%;
+		height: 500px;
+		overflow-y: scroll;
+		user-select: none;
+		display: none;
+		animation: Playlist 1s linear;
+
+	}
+	.play-song{
+		user-select: none;
+		height: 500px;
+		border-radius: 10px;
+		width: 90%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		display: none;
+		animation: PlaySong 1s linear;
+
+	}
+	.title-song-play{
+		font-size: 20px;
+		margin: 10px 0;
+	}
+	.title-motivation{
+		text-align: center;
+		font-size: 25px;
+		margin: 20px 0;
+		user-select: none;
+	}
+	.Motivation {
+		justify-content: center;
+		background-color: #000;
+		width: 100%;
+		min-height: 50vh;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		color: #fff;
+		font-family: 'Mochiy Pop P One', sans-serif;
+	}
+	.video-motivation {
+		width: 100%;
+		padding: 10px; 
+		min-height: 50vh; 
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+		overflow: hidden;
+		position: relative;
+	}
+	.video-motivation video{
+		width: 100%;
+		height: 50vh;
+		border-radius: 20px;
+		border:2px solid #fff;
+		overflow: hidden;
+	}
+	.button-back-video{
+		
+		font-size: 25px;
+	}
+	.button-next-video{
+		
+		font-size: 25px;
+	}
+	.video-motivation iframe{
+		border-radius: 20px;
+		width: 100%;
+		height: 50vh;
+	}
+
+}

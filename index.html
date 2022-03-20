@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" href="css/ExecriseGym.css">
+	<title>Gym Motivation</title>
+</head>
+<body>
+	<div class="container">
+		<div class="header" id="header">
+			<h2 class="title-header">Gym Motivation</h2>
+			<p class="des-header">Welcome To Gym Motivation</p>
+			<div class="menu-social">
+				<ul class="list-social">
+					<li class="item-social facebook"><a href="https://www.facebook.com/profile.php?id=100012704622585"><ion-icon name="logo-facebook"></ion-icon></a></li>
+					<li class="item-social github"><a href="https://github.com/NguyenTienDat098"><ion-icon name="logo-github"></ion-icon></a></li>
+					<li class="item-social twitter"><a href="https://twitter.com/home"><ion-icon name="logo-twitter"></ion-icon></a></li>
+					<li class="item-social youtube"><a href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="song-gym">
+			<audio id="audio" preload="metadata">
+				<source src="" type="audio/ogg">
+				</audio>
+				<h2 class="title-song-gym">Best Playlist For Gym</h2>
+				<p class="note">Please wear headphones for the best experience</p>
+				<div class="view-song">
+					<div class="list-song"></div>
+					<div class="play-song">
+						<div class="left-play-song">
+							<div class="CD-song">
+								<div class="CD"></div>
+							</div>
+							<p class="title-song-play">Julius Dreisig & Zeus X Crona - Invisible</p>
+						</div>
+						<div class="right-play-song">
+							<div class="progress-of-song">
+								<input type="range" class="progress" min="0" max="100" value="0">
+								<span class="minutes">0</span>
+								<span class="seconds">:0</span>
+							</div>
+							<div class="play">
+								<ion-icon name="play-skip-back-outline" class="prev-buttton"></ion-icon>
+								<ion-icon name="play-outline" class="play-button"></ion-icon>
+								<ion-icon name="play-skip-forward-outline" class="next-buttton"></ion-icon>
+							</div>
+							<div class="volume">
+								<ion-icon name="volume-medium-outline" class="volumeButton"></ion-icon>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="Motivation">
+			<h2 class="title-motivation">Best Gym Training Motivation</h2>
+			<div class="video-motivation">
+				<button class="button-back-video"><ion-icon name="arrow-back-outline" class="button-next-video-icon"></ion-icon></button>
+				<iframe src="" class="video1"></iframe>
+				<button class="button-next-video"><ion-icon name="arrow-forward-outline" class="button-next-video-icon"></ion-icon></button>
+			</div>
+		</div>
+		<div class="footer">
+			<ion-icon name="return-down-back-outline" class="back-icon"></ion-icon>
+			<ion-icon class="clock" name="timer-outline"></ion-icon>
+			<ion-icon class="home" name="home-outline"></ion-icon>
+			<ion-icon class="showmusic" name="musical-notes-outline"></ion-icon>
+		</div>
+	</div>
+	<div class="clockTimer">
+		<div class="view-time">
+			<span class="hourss">0 :</span>
+			<span class="minutess">0 :</span>
+			<span class="secondss">0</span>
+		</div>
+		<div class="view-control">
+			<button class="start-pause"><ion-icon name="play-outline"></ion-icon></button>
+			<button class="reset"><ion-icon name="refresh-outline"></ion-icon></button>
+		</div>
+	</div>
+</body>
+<script src="js/clock.js"></script>
+<script type="module" src="js/handleMusicGym.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script src="js/showListsong.js"></script>
+</html>

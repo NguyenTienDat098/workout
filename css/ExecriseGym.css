@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Mochiy+Pop+P+One&family=Neonderthaw&family=Poppins&family=Rubik+Beastly&display=swap');
+.clockTimer{
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);	
+	font-weight: bold;
+	color: #fff;
+	user-select: none;
+	position: relative;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	display: none;
+	animation: clockTimer 1s linear;
+}
+@keyframes clockTimer {
+	from{
+		opacity: 0;
+		transform: translateX(-200%);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+}
+.view-control{
+	margin-top: 10px;
+}
+.view-control button{
+	margin: 0 10px;
+	cursor: pointer;
+	border-radius: 50%;
+	border: none;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+}
+.view-control button ion-icon{
+	width: 25px;
+	height: 25px;
+}
+.view-control button:hover{
+	color: #F97F51;
+}
+
+.closeTimer{
+	font-weight: bold;
+	position: absolute;
+	right: 10px;
+	color: #eb4d4b;
+	cursor: pointer;
+}
