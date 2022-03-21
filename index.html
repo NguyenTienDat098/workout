@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/todolsitGym.css">
 	<title>Gym Motivation</title>
 </head>
 <body>
@@ -65,6 +66,7 @@
 			</div>
 		</div>
 		<div class="footer">
+			<ion-icon class="todolist"name="barbell-outline"></ion-icon>
 			<ion-icon name="return-down-back-outline" class="back-icon"></ion-icon>
 			<ion-icon class="clock" name="timer-outline"></ion-icon>
 			<ion-icon class="home" name="home-outline"></ion-icon>
@@ -82,9 +84,30 @@
 			<button class="reset"><ion-icon name="refresh-outline"></ion-icon></button>
 		</div>
 	</div>
+	<div class="todo-list-gym">
+		<h3 class="title-todo-list-gym">Make Your To Do List</h3>
+		<div class="view-todo">
+			<div class="item-todo">
+				<h3 class="title-todo">Shoulder day</h3>
+				<h3 class="time-ex">15:00</h3>
+				<ion-icon class="delete-item"name="trash-outline"></ion-icon>
+			</div>
+			<div class="item-todo">
+				<h3 class="title-todo">Shoulder day</h3>
+				<h3 class="time-ex">15:00</h3>
+				<ion-icon class="delete-item"name="trash-outline"></ion-icon>
+			</div>
+		</div>
+		<div class="view-input">
+			<input type="text" class="input-gym-excrise" placeholder="Enter your gym exercises">
+			<input type="text" class="input-time" placeholder="When do you do it?">
+			<button class="send-todo">Submit</button>
+		</div>
+	</div>
 </body>
 <script type="module" src="js/handleMusic.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script src="js/clockTimer.js"></script>
 <script src="js/showPlayList.js"></script>
+<script src="js/listGym.js"></script>
 </html>

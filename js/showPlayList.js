@@ -33,5 +33,9 @@ homeIcon.onclick = () => {
 }
 
 clock.onclick = () => {
-	clockTimer.style.display = 'flex'
+	if (clockTimer.style.display === 'none') {
+		clockTimer.style.display = 'flex'
+	}else{
+		clockTimer.style.display = 'none'
+	}
 }

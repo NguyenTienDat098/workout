@@ -108,6 +108,7 @@ html {
 
 }
 .list-song{
+	scroll-behavior: smooth;
 	width: 100%;
 	min-height: 100vh;
 	display: none;
@@ -136,7 +137,7 @@ html {
 	min-height: 60px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	font-size: 20px;
 
 
