@@ -39,7 +39,7 @@ const styleDark = {
 iconChangeLight.onclick = () => {
 	if (isDark === true) {
 		isDark = false
-		if (window.innerWidth < 450) {
+		if (window.innerWidth < 600) {
 			header.style.background = `${lightBg} 0% 50%`
 			header.style.backgroundSize = 'cover'
 			header.style.backgroundRepeat = 'no-repeat'
@@ -79,7 +79,7 @@ iconChangeLight.onclick = () => {
 	}
 	else if (isDark === false) {
 		isDark = true
-		if (window.innerWidth < 450) {
+		if (window.innerWidth < 600) {
 			header.style.background = `${darkBg}`
 			header.style.backgroundSize = 'cover'
 			header.style.backgroundRepeat = 'no-repeat'
