@@ -21,7 +21,7 @@ const songGym = document.querySelector('.song-gym');
 const viewSong = document.querySelector('.view-song');
 const motivation = document.querySelector('.Motivation');
 const darkBg = 'url(../imgs/mobileGym.jpg)'
-const lightBg = 'url(../imgs/bgl4.jpg)'
+const lightBg = 'url(../imgs/LightBg5.jpg)'
 const header = document.querySelector('.header');
 const colorIconOld = {
 	color: '#000',
@@ -40,7 +40,7 @@ iconChangeLight.onclick = () => {
 	if (isDark === true) {
 		isDark = false
 		if (window.innerWidth < 450) {
-			header.style.background = `${lightBg} 0% 70%`
+			header.style.background = `${lightBg} 0% 50%`
 			header.style.backgroundSize = 'cover'
 			header.style.backgroundRepeat = 'no-repeat'
 		}
