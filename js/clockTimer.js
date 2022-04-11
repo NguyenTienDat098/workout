@@ -1,8 +1,11 @@
+import {backIcon} from './showPlayList.js'
 const buttonCountTime = document.querySelector('.start-pause');
 const buttonResetTime = document.querySelector('.reset');
 const hoursT = document.querySelector('.hourss');
 const minutesT = document.querySelector('.minutess');
 const secondsT = document.querySelector('.secondss');
+const clock = document.querySelector('.clock');
+const clockTimer = document.querySelector('.clockTimer');
 let timerSeconds = 0
 let timerMinutes = 0
 let timerHours = 0
@@ -58,5 +61,10 @@ buttonResetTime.onclick = () => {
 	renderTime(timerSeconds,timerMinutes,timerHours)
 }
 
+clock.onclick = () => {
+	clockTimer.style.display = 'flex'
+	backIcon.style.display = 'block'
+}
 
+export {clockTimer}
 

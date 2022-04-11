@@ -24,6 +24,7 @@ html {
 }
 
 .header{
+	margin-top: 45px;
 	position: relative;
 	user-select: none;
 	width: 100%;
@@ -125,6 +126,7 @@ html {
 	user-select: none;
 	display: none;
 	animation: Playlist 1s linear;
+	padding-bottom: 45px
 
 }
 .list-song::-webkit-scrollbar { 
@@ -182,7 +184,7 @@ html {
 .CD-song{
 	width: 260px;
 	height: 260px;
-	background: linear-gradient(130deg,#f0932b,#ffbe76,#f9ca24,#f6e58d);
+	background: linear-gradient(130deg,#43eaf3,#f36262,#0877b4,#06d459);
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -194,7 +196,7 @@ html {
 	border-radius: 50%;
 	width: 250px;
 	height: 250px;
-	background: url('../imgs/TheRock2.jpg');	
+	background: url('../imgs/back.jpg');	
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -240,7 +242,6 @@ input[type="range"] {
 	background: rgba(255, 255, 255, 0.6);
 	border-radius: 5px;
 	background-image: linear-gradient(#F97F51,#F97F51);
-	background-size: 70% 100%;
 	background-repeat: no-repeat;
 }
 
@@ -272,13 +273,26 @@ input[type=range]::-webkit-slider-runnable-track  {
 	margin: 0 8px;
 	cursor: pointer;
 }
+.volume{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 45px;
+}
 .volume ion-icon:hover,
 .play ion-icon:hover{
 	color: #F97F51;
 	transition: 0.5s linear;
 }
 .volume ion-icon{
+	padding: 5px;
+	margin: 0 5px;
+	width: 28px;
+	height: 28px;
 	cursor: pointer;
+	border-radius: 50%;
+	color: #fff;
 
 }
 
@@ -378,16 +392,16 @@ input[type=range]::-webkit-slider-runnable-track  {
 .footer{
 	z-index: 10;
 	position: fixed;
-	bottom: 0;
 	left: 0;
+	bottom: 0;
 	width: 100%;
-	height: 45px;
+	height: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: #000;
 	user-select: none;
-	padding-bottom: 10px;
+	display: none;
 
 }
 .footer .back-icon{
@@ -399,7 +413,7 @@ input[type=range]::-webkit-slider-runnable-track  {
 	color: #fff;
 	width: 25px;
 	height: 25px;
-	margin: 0 15px;
+	margin: 0 10px;
 	cursor: pointer;
 	border-radius: 5px;
 }

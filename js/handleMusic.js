@@ -1,6 +1,5 @@
 import {listSongGym, listVideo} from './Song.js'
 
-// render list song start 
 function renderListSong(list) {
 	const IsPlaying = document.createElement('ion-icon')
 	const listSong= document.querySelector('.list-song')
@@ -161,7 +160,6 @@ const Music = {
 	},
 
 	startMusic : function() {
-		// playList.style.display = 'block'
 		playSong.style.display = 'flex'
 		Music.loadFirstSong()
 		volumeButton.onclick = () => {

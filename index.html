@@ -48,8 +48,6 @@
 								<ion-icon name="play-skip-back-outline" class="prev-buttton"></ion-icon>
 								<ion-icon name="play-outline" class="play-button"></ion-icon>
 								<ion-icon name="play-skip-forward-outline" class="next-buttton"></ion-icon>
-							</div>
-							<div class="volume">
 								<ion-icon name="volume-medium-outline" class="volumeButton"></ion-icon>
 							</div>
 						</div>
@@ -66,7 +64,6 @@
 			</div>
 		</div>
 		<div class="footer">
-			<ion-icon class="todolist"name="barbell-outline"></ion-icon>
 			<ion-icon name="return-down-back-outline" class="back-icon"></ion-icon>
 			<ion-icon class="clock" name="timer-outline"></ion-icon>
 			<ion-icon class="home" name="home-outline"></ion-icon>
@@ -87,27 +84,23 @@
 	<div class="todo-list-gym">
 		<h3 class="title-todo-list-gym">Make Your To Do List</h3>
 		<div class="view-todo">
-			<div class="item-todo">
-				<h3 class="title-todo">Shoulder day</h3>
-				<h3 class="time-ex">15:00</h3>
-				<ion-icon class="delete-item"name="trash-outline"></ion-icon>
-			</div>
-			<div class="item-todo">
-				<h3 class="title-todo">Shoulder day</h3>
-				<h3 class="time-ex">15:00</h3>
-				<ion-icon class="delete-item"name="trash-outline"></ion-icon>
-			</div>
+			
 		</div>
 		<div class="view-input">
 			<input type="text" class="input-gym-excrise" placeholder="Enter your gym exercises">
-			<input type="text" class="input-time" placeholder="When do you do it?">
-			<button class="send-todo">Submit</button>
+			<input type="text" class="time-pickable" placeholder="When do you do it?" readonly>
+			<button type="submit"class="send-todo">Submit</button>
 		</div>
 	</div>
+	<div class="menu-mobile">
+		<ion-icon class="menu-mobile-item moon-sun"name="moon-outline"></ion-icon>
+		<ion-icon class="menu-mobile-item menu-icon"name="grid-outline"></ion-icon>
+	</div>
 </body>
-<script type="module" src="js/handleMusic.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script src="js/clockTimer.js"></script>
-<script src="js/showPlayList.js"></script>
-<script src="js/listGym.js"></script>
+<script type="module" src="js/timePicker.js"></script>
+<script type="module" src="js/clockTimer.js"></script>
+<script type="module" src="js/showPlayList.js"></script>
+<script type="module" src="js/handleMusic.js"></script>
+<script type="module" src="js/changeDarkLight.js"></script>
 </html>

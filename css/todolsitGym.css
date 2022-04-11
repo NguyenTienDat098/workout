@@ -31,7 +31,9 @@
 	}
 }
 .title-todo-list-gym{
+	font-size: 32px;
 	text-align: center;
+
 }
 .view-todo{
 	width: 100%;
@@ -49,6 +51,9 @@
 	display: none; 
 }
 .item-todo{
+	word-wrap: break-word;      /* IE 5.5-7 */
+	white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+	white-space: pre-wrap;      /* current browsers */
 	/*padding: 0 10px;*/
 	width: 80%;
 	font-size: 18px;
@@ -64,7 +69,7 @@
 }
 .item-todo h3{
 	font-weight: normal;
-	margin: 0 10px;
+	margin: 0 5px;
 }
 .delete-item{
 	cursor: pointer;
@@ -85,7 +90,7 @@
 .view-input input{
 	width: 80%;
 	height: 40px;
-	margin: 10px 0;
+	margin: 5px 0;
 	border-radius: 5px;
 	border: none;
 	padding: 0 10px;
@@ -97,17 +102,56 @@
 .time-ex{
 	margin-right: 10px;
 }
-.send-todo{
-	cursor: pointer;
-	background-color: #fff;
-	color: #000;
-	font-weight: bold;
-	border: none;
-	border-radius: 5px;
-	width: 60px;
-	height: 30px;
-}
-.send-todo:hover{
+
+/* CSS */
+.send-todo {
+	align-items: center;
+	background-clip: padding-box;
 	background-color: #F97F51;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+	box-sizing: border-box;
 	color: #fff;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	justify-content: center;
+	line-height: 1.25;
+	margin: 0;
+	min-height: 2rem;
+	padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+	position: relative;
+	text-decoration: none;
+	transition: all 250ms;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: baseline;
+	width: 100px;
+}
+
+.send-todo:hover,
+.send-todo:focus {
+	background-color: #fb8332;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.send-todo:hover {
+	transform: translateY(-1px);
+}
+
+.send-todo:active {
+	background-color: #c85000;
+	box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+	transform: translateY(0);
+}
+option {
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+}
+option::-webkit-scrollbar { 
+	display: none; 
 }

@@ -129,31 +129,75 @@ const listSongGym = [
 	titleSong: 'Valorant Brimstone',
 	src: 'mp3/Brimstone  Official Theme Song Music  Rebel Spirit  Sound Breakers   Valorant.mp3'
 },
+{
+	id: 27,
+	titleSong: 'Don Apollo Wusk Mercy',
+	src: 'mp3/Don Apollo  Wusk  Mercy.mp3'
+},
+{
+	id: 28,
+	titleSong: 'BIOJECT - Ranger',
+	src: 'mp3/BIOJECT  Ranger Magic Free Release.mp3'
+},
+{
+	id: 29,
+	titleSong: 'Valorant Brimstone',
+	src: 'mp3/Brimstone  Official Theme Song Music  Rebel Spirit  Sound Breakers   Valorant.mp3'
+},
+{
+	id: 30,
+	titleSong: 'Dirty Palm Benix Legacy',
+	src: 'mp3/Dirty Palm  Benix  Legacy NCS Release.mp3'
+},
+{
+	id: 31,
+	titleSong: 'More Plastic - Razor',
+	src: 'mp3/More Plastic  Razor NCS Release.mp3'
+},
+{
+	id: 32,
+	titleSong: 'NEFFEX  Tell Me That I Cant',
+	src: 'mp3/NEFFEX  Tell Me That I Cant Copyright Free.mp3'
+},
+{
+	id: 33,
+	titleSong: 'Pusher - Clear ft Mothica',
+	src: 'mp3/Pusher  Clear ft Mothica Shawn Wasabi Remix.mp3'
+},
+{
+	id: 34,
+	titleSong: 'LCS 2021 |Commercial Break| Fast Flow',
+	src: 'mp3/LCS 2021  Commercial Break  Fast Flow.mp3'
+},
 ]
 
 const listVideo = [
 {
 	id: 1,
-	src: 'https://www.youtube.com/embed/gyWUmFlnUXQ'
-},
-{
-	id: 2,
-	src: 'https://www.youtube.com/embed/XhzHLS9hsfE'
-},
-{
-	id: 3,
-	src: 'https://www.youtube.com/embed/ikf3QTOkdqs'
-},
-{
-	id: 4,
-	src: 'https://www.youtube.com/embed/4okfF6k_m-A'
-},
-{
-	id: 5,
 	src: 'https://www.youtube.com/embed/-i3QGClEWrU'
 },
 {
+	id: 2,
+	src: 'https://www.youtube.com/embed/IBOrp-ZU_pE'
+},
+{
+	id: 3,
+	src: 'https://www.youtube.com/embed/XhzHLS9hsfE'
+},
+{
+	id: 4,
+	src: 'https://www.youtube.com/embed/ikf3QTOkdqs'
+},
+{
+	id: 5,
+	src: 'https://www.youtube.com/embed/4okfF6k_m-A'
+},
+{
 	id: 6,
+	src: 'https://www.youtube.com/embed/gyWUmFlnUXQ'
+},
+{
+	id: 7,
 	src: 'https://www.youtube.com/embed/HnoPHqrdXQ8'
 }
 
