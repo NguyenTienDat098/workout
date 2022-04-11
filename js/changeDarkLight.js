@@ -21,7 +21,7 @@ const songGym = document.querySelector('.song-gym');
 const viewSong = document.querySelector('.view-song');
 const motivation = document.querySelector('.Motivation');
 const darkBg = 'url(../imgs/mobileGym.jpg)'
-const lightBg = 'url(../imgs/bg4.jpg)'
+const lightBg = 'url(../imgs/bgl4.jpg)'
 const header = document.querySelector('.header');
 const colorIconOld = {
 	color: '#000',
