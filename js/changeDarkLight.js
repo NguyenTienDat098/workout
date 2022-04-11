@@ -20,8 +20,8 @@ var isDark = true
 const songGym = document.querySelector('.song-gym');
 const viewSong = document.querySelector('.view-song');
 const motivation = document.querySelector('.Motivation');
-const darkBg = 'url(./imgs/mobileGym.jpg)'
-const lightBg = 'url(./imgs/LightBg5.jpg)'
+const darkBg = 'url(imgs/mobileGym.jpg)'
+const lightBg = 'url(imgs/LightBg5.jpg)'
 const header = document.querySelector('.header');
 const colorIconOld = {
 	color: '#000',
