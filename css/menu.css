@@ -7,8 +7,7 @@
 	user-select: none;
 	position: relative;
 	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 0;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	position: fixed;
@@ -18,18 +17,11 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	display: none;
-	animation: clockTimer 1s linear;
+	transform: translate(-150%,0);
+	transition: all 0.5s linear;
 }
-@keyframes clockTimer {
-	from{
-		opacity: 0;
-		transform: translateX(-200%);
-	}
-	to{
-		opacity: 1;
-		transform: translateX(-50%);
-	}
+.clockTimer.isopen{
+	transform: none;
 }
 .view-control{
 	margin-top: 10px;
@@ -80,6 +72,7 @@
 	cursor: pointer;
 	border-radius: 50%;
 	color: #fff;
+	background: transparent !important;
 
 }
 .menu-mobile-item:hover{

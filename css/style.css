@@ -34,6 +34,7 @@ html {
 	background-repeat: no-repeat;
 	color: #fff;
 	font-family: 'Mochiy Pop P One', sans-serif;
+	transition: all 0.5s linear 0s;
 
 }
 .menu-social{
@@ -84,6 +85,7 @@ html {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	transition: all 0.5s linear 0s
 
 }
 .title-song-gym{
@@ -106,13 +108,13 @@ html {
 	align-items: center;
 	justify-content: space-evenly;
 	padding: 10px 0;
+	transition: all 0.5s linear 0s;
 
 }
 .list-song{
 	scroll-behavior: smooth;
 	width: 100%;
 	min-height: 100vh;
-	display: none;
 	position: fixed;
 	z-index: 9;
 	top: 0;
@@ -124,10 +126,9 @@ html {
 	height: 500px;
 	overflow-y: scroll;
 	user-select: none;
-	display: none;
-	animation: Playlist 1s linear;
-	padding-bottom: 45px
-
+	padding-bottom: 45px;
+	transform: translate(-150%,0);
+	transition: all 0.5s linear;
 }
 .list-song::-webkit-scrollbar { 
 	display: none; 
@@ -368,6 +369,7 @@ input[type=range]::-webkit-slider-runnable-track  {
 	flex-direction: column;
 	color: #fff;
 	font-family: 'Mochiy Pop P One', sans-serif;
+	transition: all 0.5s linear 0s;
 }
 
 .title-motivation{
@@ -390,6 +392,8 @@ input[type=range]::-webkit-slider-runnable-track  {
 	height: 80vh;
 }
 .footer{
+	transform: translate(0,150%);
+	transition: all 0.5s linear;
 	z-index: 10;
 	position: fixed;
 	left: 0;
@@ -401,8 +405,13 @@ input[type=range]::-webkit-slider-runnable-track  {
 	justify-content: center;
 	background-color: #000;
 	user-select: none;
-	display: none;
 
+}
+.list-song.isopen{
+	transform: none;
+}
+.footer.isopen{
+	transform: none;
 }
 .footer .back-icon{
 	display: none;
@@ -416,6 +425,8 @@ input[type=range]::-webkit-slider-runnable-track  {
 	margin: 0 10px;
 	cursor: pointer;
 	border-radius: 5px;
+	background : transparent !important;
+
 }
 .footer ion-icon:hover{
 	color: #F97F51;
@@ -453,3 +464,4 @@ input[type=range]::-webkit-slider-runnable-track  {
 	color: #fff;
 	cursor: pointer;
 }
+

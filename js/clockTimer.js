@@ -62,7 +62,7 @@ buttonResetTime.onclick = () => {
 }
 
 clock.onclick = () => {
-	clockTimer.style.display = 'flex'
+	clockTimer.classList.add('isopen')
 	backIcon.style.display = 'block'
 }
 

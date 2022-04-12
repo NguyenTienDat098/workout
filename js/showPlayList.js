@@ -5,28 +5,21 @@ const homeIcon = document.querySelector('.home');
 const buttonShowListSong = document.querySelector('.showmusic');
 
 buttonShowListSong.onclick = () => {
-	listSong.style.display = 'block'
+	listSong.classList.add('isopen')
 	backIcon.style.display = 'block'
 
 }
 
 homeIcon.onclick = () => {
-	clockTimer.style.display = 'none'
-	listSong.style.display = 'none'
+	clockTimer.classList.remove('isopen')
+	listSong.classList.remove('isopen')
 	backIcon.style.display = 'none'
 	location.href = '#header'
 }
 
 backIcon.addEventListener('click', () => {
-	if (clockTimer.style.display !== 'none') {
-		clockTimer.style.display = 'none'
-		backIcon.style.display = 'none'
-
-	}
-	if (listSong.style.display !== 'none') {
-		listSong.style.display = 'none'
-		backIcon.style.display = 'none'
-
-	}
+	clockTimer.classList.remove('isopen')
+	listSong.classList.remove('isopen')
+	backIcon.style.display = 'none'
 })
 export {backIcon}

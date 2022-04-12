@@ -7,13 +7,8 @@ const menuSocial = document.querySelectorAll('.menu-social ion-icon');
 const clockTimer = document.querySelector('.clockTimer');
 const listSong = document.querySelector('.list-song');
 
-menuMobileView.style.display = 'none'
 menuMobile.onclick = () => {
-	if (menuMobileView.style.display === 'none') {
-		menuMobileView.style.display = 'flex'
-	}else{
-		menuMobileView.style.display = 'none'
-	}
+	menuMobileView.classList.toggle('isopen')
 }
 
 var isDark = true
