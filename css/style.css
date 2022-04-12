@@ -113,8 +113,8 @@ html {
 }
 .list-song{
 	scroll-behavior: smooth;
-	width: 100%;
-	min-height: 100vh;
+	width: 35%;
+	height: 500px;
 	position: fixed;
 	z-index: 9;
 	top: 0;
@@ -122,8 +122,6 @@ html {
 	background-color: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(10px);	
 	border-radius: 10px;
-	width: 35%;
-	height: 500px;
 	overflow-y: scroll;
 	user-select: none;
 	padding-bottom: 45px;
@@ -197,7 +195,7 @@ html {
 	border-radius: 50%;
 	width: 250px;
 	height: 250px;
-	background: url('../imgs/back.jpg');	
+	background: url('../imgs/songimgs.jpeg');	
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -407,9 +405,7 @@ input[type=range]::-webkit-slider-runnable-track  {
 	user-select: none;
 
 }
-.list-song.isopen{
-	transform: none;
-}
+
 .footer.isopen{
 	transform: none;
 }
@@ -464,4 +460,6 @@ input[type=range]::-webkit-slider-runnable-track  {
 	color: #fff;
 	cursor: pointer;
 }
-
+.list-song.isopen{
+	transform: none;
+}

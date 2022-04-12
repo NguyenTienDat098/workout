@@ -7,7 +7,6 @@ const buttonShowListSong = document.querySelector('.showmusic');
 buttonShowListSong.onclick = () => {
 	listSong.classList.add('isopen')
 	backIcon.style.display = 'block'
-
 }
 
 homeIcon.onclick = () => {

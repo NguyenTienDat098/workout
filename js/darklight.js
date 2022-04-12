@@ -34,6 +34,7 @@ const styleDark = {
 iconChangeLight.onclick = () => {
 	if (isDark === true) {
 		isDark = false
+		changeIconSunMoon(isDark)
 		if (window.innerWidth < 600) {
 			header.style.background = `${lightBg} 0% 50%`
 			header.style.backgroundSize = 'cover'
@@ -74,6 +75,7 @@ iconChangeLight.onclick = () => {
 	}
 	else if (isDark === false) {
 		isDark = true
+		changeIconSunMoon(isDark)
 		if (window.innerWidth < 600) {
 			header.style.background = `${darkBg}`
 			header.style.backgroundSize = 'cover'
@@ -99,4 +101,11 @@ iconChangeLight.onclick = () => {
 	}
 }
 
+function changeIconSunMoon(isDark) {
+	if (isDark === true) {
+		iconChangeLight.setAttribute('name','sunny-outline')
+	}else{
+		iconChangeLight.setAttribute('name','moon-outline')
+	}
 
+}

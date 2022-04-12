@@ -25,7 +25,6 @@ function renderListSong(list) {
 	listSong.appendChild(itemSong)
 	iconPlay.value = list.id
 	iconPlay.classList.add('play-in-list')
-	listSong.style.display = 'none'
 }
 listSongGym.forEach((e,i) => {
 	renderListSong(e)	
